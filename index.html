@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gurjashan Singh">
+    <meta name="description" content="My web page">
+    <meta name="keywords" content="html, css, web, seo, web development">
+    <title>Working with cookies</title>
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Cookies</h1>
+            <p>
+                <span>Cookies</span> are small pieces of data stored on a user's device
+                by a web browser while browsing a website. They are used to remember
+                information about the user, such as preferences, login details, or 
+                activity on the site, to provide a more personalized and seamless browsing 
+                experience. 
+            </p>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <div id="cookieDialog" class="dialog">
+        <h2>Cookie Consent</h2>
+        <p>We use cookies to improve your experience. By clicking "Accept All", you agree to the use of cookies.</p>
+        <button id="acceptAll">Accept All</button>
+        <button id="openSettings">Settings</button>
+    </div>
+
+    <div id="settingsDialog" class="dialog">
+        <h2>Cookie Settings</h2>
+        <p>Select which cookies you'd like to enable:</p>
+
+        <label for="browserToggle">Browser Info</label>
+        <label class="switch">
+            <input id="browserToggle" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+
+        <label for="screenToggle">Screen Info</label>
+        <label class="switch">
+            <input id="screenToggle" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+
+        <label for="osToggle">Operating System Info</label>
+        <label class="switch">
+            <input id="osToggle" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+
+        <button id="saveSettings">Save Settings</button>
+    </div>
+</body>
+</html>
